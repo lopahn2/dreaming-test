@@ -2,11 +2,12 @@ package dreaming.dreaming_example.userAuth.dto;
 
 import dreaming.dreaming_example.userAuth.entity.Authority;
 import dreaming.dreaming_example.userAuth.entity.UserAuth;
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 
-@Data
 @Builder
+@AllArgsConstructor(access=AccessLevel.PROTECTED)
+@NoArgsConstructor(access=AccessLevel.PROTECTED)
+@Getter
 public class UserAuthDto {
     private String email;
 

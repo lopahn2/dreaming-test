@@ -1,15 +1,17 @@
 package dreaming.dreaming_example.board.dto;
 
 import dreaming.dreaming_example.board.entity.Board;
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.Entity;
 import java.time.LocalDateTime;
 
 
-@Data
+
 @Builder
+@AllArgsConstructor(access=AccessLevel.PROTECTED)
+@NoArgsConstructor(access=AccessLevel.PROTECTED)
+@Getter
 public class BoardDto {
     private String title;
 
